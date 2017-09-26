@@ -20,3 +20,6 @@ app.get('/api/endpoint2', function(req, res, next){
     //Then
     req.session.userFav // has a value of "spicy jalapenos"
 })
+
+//DESTROY
+req.session.destroy();

@@ -3,6 +3,7 @@ let bodyParser = require('body-parser');
 
 var app = express();
 
+
 app.get('/api/stuff', function(req,res,next) { }, function(req, res, next){ }) //...
 
 app.get('/api/stuff', function(req,res,next) { 
@@ -26,6 +27,7 @@ app.get('/api/stuff', inlineMiddleware, function(req, res, next){
 }) 
 
 
+//TOP LEVEL MIDDLEWARE
 app.use(bodyParser.json());
 
 app.get('/api/stuff', inlineMiddleware, function(req, res, next){ 
